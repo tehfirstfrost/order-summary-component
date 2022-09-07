@@ -1,0 +1,113 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+}
+
+body{
+    background-image: url("./images/pattern-background-desktop.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: var(--pale-blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Red hat display', sans-serif;
+    font-size: 16px;
+    width: 100vw;
+    height: 100vh;
+}
+
+.card{
+    width: 450px;
+    height: 700px;
+    border-radius: 20px;
+    background-color: white;
+}
+
+.title{
+    color: var(--dark-blue);
+    font-weight: 900;
+    font-size: 32px;
+}
+
+.hero{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    width: 100%;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+}
+
+.wrapper > *{
+    margin: 13px 0;
+}
+
+.info{
+    line-height: 20px;
+}
+
+.plan{
+    background-color: var(--very-pale-blue);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 20px;
+    width: 100%;
+    line-height: 20px;
+
+}
+
+p{
+    text-align: center;
+    padding: 20px 40px;
+}
+
+button{
+    border:none;
+    border-radius: 12px;
+    font-weight: 700;
+    cursor: pointer;
+    font-size: .9rem;
+}
+.proceed-btn{
+    background-color: var(--bright-blue);
+    color: white;
+    padding: 1rem 0;
+    box-shadow: 0 20px 30px -8px rgb(197,189,245);
+    width: 100%;
+}
+
+.proceed-btn:hover{
+    opacity: .75;
+}
+
+.cancel-btn{
+    background-color: white;
+    color: var(--desaturated-blue);
+    margin-top: 22px;
+    width: 25%;
+}
+
+.cancel-btn:hover{
+    color:black;
+    /* opacity: .75; */
+}
